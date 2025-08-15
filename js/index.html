@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<!-- navbar -->
+    <header>
+        <div class="logo">☰</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Profile</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Hero Section -->
+    <section class="hero">
+<input type="text" id="nameInput" placeholder="tutor RevoU">
+<button id="sayHi">Salam</button>
+<h1 id="greeting">Hai ...!</h1>
+<script src="script.js"></script>
+
+        <p>Let's get started!</p>
+        <div class="hero-img">1366×578</div>
+    </section>
+
+<!-- Headquarters -->
+    <section class="headquarters">
+        <h2>Our Headquarter</h2>
+        <div class="circle">Jakarta</div>
+        <div class="circle">Bandung</div>
+        <div class="circle">Surabaya</div>
+    </section>
+
+    <!-- Message Us -->
+    <section class="message-us">
+        <h2>Message Us</h2>
+        <div class="form-container">
+            <form id="messageForm">
+                <label>Nama</label>
+                <input type="text" name="nama" placeholder="Nama" required>
+
+                <label>Tanggal Lahir</label>
+                <input type="date" name="tanggalLahir" required>
+
+                <label>Jenis Kelamin</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki</label>
+                    <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+                </div>
+
+                <label>Pesan</label>
+                <textarea name="pesan" placeholder="Pesan" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="output-box" id="output">
+                <p><strong>Current time:</strong> <span id="currentTime"></span></p>
+                <p><strong>Nama:</strong> -</p>
+                <p><strong>Tanggal Lahir:</strong> -</p>
+                <p><strong>Jenis Kelamin:</strong> -</p>
+                <p><strong>Pesan:</strong> -</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by RevU</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
